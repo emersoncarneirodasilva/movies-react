@@ -1,0 +1,91 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+}
+
+#navbar h2 a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#navbar form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#navbar input {
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+}
+
+#navbar form button {
+  display: flex;
+  align-items: center;
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.3rem;
+  font-size: 1.3rem;  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#navbar form button:hover {
+  background-color: transparent;
+  color: #f7d354;
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    font-size: 14px;
+  }
+
+  #navbar input {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #navbar {
+    font-size: 12px;
+  }
+
+  #navbar input {
+    width: 8rem;
+  }
+
+  #navbar input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  #navbar {
+    font-size: 12px;
+  }
+
+  #navbar input {
+    width: 8rem;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  #navbar {
+    font-size: 10px;
+  }
+
+  #navbar h2 a {
+    margin-left: -20px;
+  }
+
+  #navbar input {
+    margin-left: 10px;
+  }  
+}
